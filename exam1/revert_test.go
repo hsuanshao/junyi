@@ -1,9 +1,6 @@
 package exam1
 
-import (
-	"fmt"
-	"testing"
-)
+import "testing"
 
 func TestRevertString(t *testing.T) {
 	testCase := []struct {
@@ -45,7 +42,6 @@ func TestRevertSentence(t *testing.T) {
 		result := revertSentence(c.Input)
 
 		if result != c.ExpRes {
-			fmt.Println(result)
 			t.Error("revert sentence failure", c.Desc)
 			continue
 		}
